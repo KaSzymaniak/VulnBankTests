@@ -13,15 +13,15 @@ Podczas analizy mechanizmu sesji opartego na **JSON Web Tokens (JWT)**, zidentyf
 
 ## 2. Identified Vulnerabilities
 
-### 🚨 2.1 Missing Expiration Claim (`exp`)
+### 2.1 Missing Expiration Claim (`exp`)
 * **Opis:** Token zawiera jedynie pole `iat` (Issued At). Brak pola `exp` (Expiration Time) sprawia, że sesja użytkownika jest bezterminowa.
 * **Ryzyko:** Raz przejęty token pozwala atakującemu na dostęp do konta ofiary na zawsze (Long-lived session hijacking).
 
-### 🚨 2.2 Algorithm Confusion (None Attack) - CVE-2015-2951
+### 2.2 Algorithm Confusion (None Attack) - CVE-2015-2951
 * **Opis:** Serwer akceptuje tokeny z nagłówkiem `"alg": "none"`. Pozwala to na całkowite usunięcie podpisu kryptograficznego i ręczną edycję danych wewnątrz tokena.
 * **Ryzyko:** Krytyczne. Każdy użytkownik może stać się administratorem.
 
-### 🚨 2.3 Privilege Escalation via Payload Manipulation
+### 2.3 Privilege Escalation via Payload Manipulation
 * **Opis:** Flaga `is_admin` oraz identyfikator `user_id` są przechowywane bezpośrednio w części *Payload*. Ponieważ serwer nie weryfikuje podpisu, dane te mogą być modyfikowane przez klienta.
 
 ---
