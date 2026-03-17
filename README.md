@@ -2,7 +2,7 @@
 
 ## 1. Authentication & Authorization
 
-- [ ] SQL Injection in login
+- [x] SQL Injection in login
 - [ ] Weak JWT implementation
 - [ ] Broken object level authorization (BOLA)
 - [ ] Broken object property level authorization (BOPLA)
@@ -19,7 +19,7 @@
 - [ ] Information disclosure
 - [ ] Sensitive data exposure
 - [ ] Plaintext password storage
-- [ ] SQL injection points
+- [x] SQL injection points
 - [ ] Debug information exposure
 - [ ] Detailed error messages exposed
 
