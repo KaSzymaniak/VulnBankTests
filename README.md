@@ -31,7 +31,7 @@
 - [ ] Negative amount transfers possible
 - [ ] No transaction limits
 - [ ] Race conditions in transfers and balance updates
-- [ ] Transaction history information disclosure
+- [x] Transaction history information disclosure
 - [ ] No validation on recipient accounts
 
 ---
