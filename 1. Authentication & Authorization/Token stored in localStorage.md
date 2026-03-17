@@ -2,9 +2,9 @@
 Aplikacja przechowuje token JWT w localStorage, co zwiększa ryzyko przejęcia tokena.
 
 ## Reprodukcja:
-Zalogować się do aplikacji.
-Otworzyć DevTools → Application → Local Storage.
-Zweryfikować obecność tokena.
+1. Zalogować się do aplikacji.
+2. Otworzyć DevTools → Application → Local Storage.
+3. Zweryfikować obecność tokena.
 
 ## Rezultat:
 Widoczny jwt_token wraz z jego wartością.
