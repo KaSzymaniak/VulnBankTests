@@ -8,11 +8,9 @@ Endpoint przelewu akceptuje ujemna kwote i wykonuje transakcje.
 
 2. Wyslac przelew na kwote ujemna.
 
-![2_negativetransfer.png](../img/2_negativetransfer.png)
-
-Stan konta po operacji:
-
-![acc_balance_2k.png](../img/acc_balance_2k.png)
+![3_negativetransfer.png](../img/3_negativetransfer.png)
 
 ## Rezultat:
-Mamy dodatkowe srodki na koncie wykonujacym przelew.
+Mamy dodatkowe srodki na koncie wykonujacym przelew. Stan konta po operacji:
+
+![acc_balance_2k.png](../img/acc_balance_2k.png)
