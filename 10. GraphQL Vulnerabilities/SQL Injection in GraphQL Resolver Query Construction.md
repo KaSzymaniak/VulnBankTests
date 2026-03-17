@@ -15,14 +15,14 @@ query {
 }
 ```
 3. Zmodyfikować parametr wejściowy, wprowadzając nieoczekiwane znaki (np. apostrof ') w celu wywołania błędu SQL:
-
+```
 query {
   user(id: "1'") {
     id
     name
   }
 }
-
+```
 4. Obserwować odpowiedź serwera w DevTools (F12) → Network lub w konsoli ZAP / Postman.
 5. Sprawdzić, czy pojawiają się błędy związane z bazą danych (np. SQL syntax error) lub ujawniające strukturę tabel i pól.
 
