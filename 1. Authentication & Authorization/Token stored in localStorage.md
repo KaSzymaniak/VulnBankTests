@@ -1,16 +1,14 @@
-# Token stored in localStorage
-Aplikacja przechowuje token JWT w localStorage, co zwiększa ryzyko przejęcia tokena.
+﻿# Token stored in localStorage
+Aplikacja przechowuje token JWT w localStorage, co zwiÄ™ksza ryzyko przejÄ™cia tokena.
 
 ## Reprodukcja:
-Zalogować się do aplikacji.
-Otworzyć DevTools → Application → Local Storage.
-Zweryfikować obecność tokena.
+ZalogowaÄ‡ siÄ™ do aplikacji.
+OtworzyÄ‡ DevTools â†’ Application â†’ Local Storage.
+ZweryfikowaÄ‡ obecnoÅ›Ä‡ tokena.
 
 ## Rezultat:
-Widoczny jwt_token wraz z jego wartością.
+Widoczny jwt_token wraz z jego wartoÅ›ciÄ….
 
 ![1_jwttoken.png](https://github.com/KaSzymaniak/VulnBankTests/blob/main/img/1_jwttoken.png?raw=true)
 
-## Rekomendacja:
-Przechowywanie tokena w HttpOnly; Secure; SameSite cookie.
-Ograniczenie powierzchni XSS (CSP, sanitizacja, escaping).
+

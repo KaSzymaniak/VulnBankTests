@@ -1,4 +1,4 @@
-#  Vulnerability Report: Cross Site Scripting (XSS)
+﻿#  Vulnerability Report: Cross Site Scripting (XSS)
 **Target Application:** Vuln-Bank (Localhost)
 **Author:** Karol
 **Date:** 17.03.2026
@@ -42,12 +42,7 @@ W aplikacji mozliwe jest zapisanie i renderowanie danych uzytkownika bez poprawn
 
 ---
 
-## 5. Recommendations
-* Escapuj output po stronie serwera i klienta.
-* Sanitizuj dane wejsciowe whitelistowo.
-* Wlacz restrykcyjna polityke CSP i HttpOnly cookies.
-
----
-
-## 6. Final Assessment
+## 5. Final Assessment
 Podatnosc **Cross Site Scripting (XSS)** zostala potwierdzona. Konieczne jest zabezpieczenie calego lancucha input-output.
+
+

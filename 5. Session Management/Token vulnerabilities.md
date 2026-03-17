@@ -1,4 +1,4 @@
-#  Vulnerability Report: Token Vulnerabilities
+﻿#  Vulnerability Report: Token Vulnerabilities
 **Target Application:** Vuln-Bank (Localhost)
 **Author:** Karol
 **Date:** 17.03.2026
@@ -37,12 +37,7 @@ Implementacja tokenow sesyjnych posiada bledy bezpieczenstwa (m.in. slaby sekret
 
 ---
 
-## 5. Recommendations
-* Wymus mocny sekret i rotacje kluczy.
-* Wprowadz `exp`, `nbf`, `iss`, `aud` oraz twarda walidacje algorytmu.
-* Rozwaz blacklistowanie tokenow po wylogowaniu/incydencie.
-
----
-
-## 6. Final Assessment
+## 5. Final Assessment
 Podatnosc **Token vulnerabilities** zostala potwierdzona. Mechanizm tokenow wymaga utwardzenia kryptograficznego i walidacyjnego.
+
+

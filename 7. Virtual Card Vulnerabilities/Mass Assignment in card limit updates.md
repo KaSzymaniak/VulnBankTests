@@ -1,4 +1,4 @@
-#  Vulnerability Report: Mass Assignment in Card Limit Updates
+﻿#  Vulnerability Report: Mass Assignment in Card Limit Updates
 **Target Application:** Vuln-Bank (Localhost)
 **Author:** Karol
 **Date:** 17.03.2026
@@ -45,12 +45,7 @@ curl -i -X POST http://localhost:5000/api/virtual-cards/1/update-limit \
 
 ---
 
-## 5. Recommendations
-* Wprowadz allowliste pol i walidacje biznesowa.
-* Autoryzuj aktualizacje per zasob (czy karta nalezy do usera).
-* Dodaj limity i alerty dla nietypowych zmian.
-
----
-
-## 6. Final Assessment
+## 5. Final Assessment
 Podatnosc **Mass Assignment in card limit updates** zostala potwierdzona. Endpoint wymaga twardej kontroli dozwolonych pol i zasad biznesowych.
+
+

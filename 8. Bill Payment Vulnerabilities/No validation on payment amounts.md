@@ -1,4 +1,4 @@
-#  Vulnerability Report: No Validation on Payment Amounts
+﻿#  Vulnerability Report: No Validation on Payment Amounts
 **Target Application:** Vuln-Bank (Localhost)
 **Author:** Karol
 **Date:** 17.03.2026
@@ -45,12 +45,7 @@ curl -i -X POST http://localhost:5000/api/bill-payments/create \
 
 ---
 
-## 5. Recommendations
-* Wymus `amount > 0`, limity i precyzje decimal.
-* Dodaj reguly antyfraudowe i walidacje biznesowe per biller.
-* Pokryj endpoint testami negatywnymi.
-
----
-
-## 6. Final Assessment
+## 5. Final Assessment
 Podatnosc **No validation on payment amounts** zostala potwierdzona. Niezbedna jest silna walidacja danych finansowych po stronie serwera.
+
+

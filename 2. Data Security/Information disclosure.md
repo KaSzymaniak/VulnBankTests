@@ -1,4 +1,4 @@
-#  Vulnerability Report: Information Disclosure
+﻿#  Vulnerability Report: Information Disclosure
 **Target Application:** Vuln-Bank (Localhost)
 **Author:** Karol
 **Date:** 17.03.2026
@@ -7,7 +7,7 @@
 ---
 
 ## 1. Overview
-Wykryto wyciek informacji poprzez odpowiedzi API. Endpointy zwracaja dane, ktore nie sa wymagane do realizacji funkcji klienta (m.in. pola wewnetrzne i informacje o innych uzytkownikach), a błędy backendu ujawniaja szczegoly implementacyjne.
+Wykryto wyciek informacji poprzez odpowiedzi API. Endpointy zwracaja dane, ktore nie sa wymagane do realizacji funkcji klienta (m.in. pola wewnetrzne i informacje o innych uzytkownikach), a bÅ‚Ä™dy backendu ujawniaja szczegoly implementacyjne.
 
 ---
 
@@ -76,7 +76,6 @@ curl -i "http://localhost:8000/api/transactions?limit='"
 * Wyzsze prawdopodobienstwo skutecznych atakow wtornych.
 
 ---
-
 
 ## 5. Final Assessment
 Podatnosc **Information Disclosure** zostala potwierdzona. Aplikacja ujawnia dane i szczegoly implementacyjne, ktore nie powinny byc dostepne dla zwyklego uzytkownika. Wymagane jest ograniczenie zakresu danych w odpowiedziach API oraz poprawa kontroli autoryzacji i obslugi bledow.

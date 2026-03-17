@@ -1,4 +1,4 @@
-#  Vulnerability Report: SQL Injection in Login
+﻿#  Vulnerability Report: SQL Injection in Login
 **Target Application:** Vuln-Bank (Localhost)
 **Author:** Karol
 **Date:** 17.03.2026
@@ -43,12 +43,7 @@ password: dowolne
 
 ---
 
-## 5. Recommendations
-* Uzywaj parametryzowanych zapytan SQL.
-* Dodaj centralna walidacje wejscia i bezpieczna obsluge bledow.
-* Wprowadz rate limiting i monitorowanie prob logowania.
-
----
-
-## 6. Final Assessment
+## 5. Final Assessment
 Podatnosc **SQL Injection in login** zostala potwierdzona. Mechanizm logowania nie powinien budowac zapytan SQL przez konkatenacje stringow.
+
+

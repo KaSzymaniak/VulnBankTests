@@ -1,6 +1,6 @@
 #  Vulnerability Report: Weak JWT Implementation
 **Target Application:** Vuln-Bank (Localhost)
-**Author:** Karciaczek
+**Author:** Karol
 **Date:** 17.03.2026
 **Status:** Confirmed (PoC Created)
 

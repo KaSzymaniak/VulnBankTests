@@ -1,4 +1,4 @@
-#  Vulnerability Report: Prompt Injection (CWE-77)
+﻿#  Vulnerability Report: Prompt Injection (CWE-77)
 **Target Application:** Vuln-Bank (Localhost)
 **Author:** Karol
 **Date:** 17.03.2026
@@ -45,12 +45,7 @@ curl -i -X POST http://localhost:5000/api/ai/chat \
 
 ---
 
-## 5. Recommendations
-* Wprowadz prompt hardening i separacje roli system/user.
-* Filtruj i klasyfikuj zapytania wysokiego ryzyka.
-* Dodaj audyt odpowiedzi AI oraz testy red-team.
-
----
-
-## 6. Final Assessment
+## 5. Final Assessment
 Podatnosc **Prompt Injection (CWE-77)** zostala potwierdzona. Warstwa AI wymaga dodatkowych zabezpieczen sterowania kontekstem.
+
+

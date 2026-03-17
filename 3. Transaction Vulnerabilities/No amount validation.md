@@ -1,4 +1,4 @@
-#  Vulnerability Report: No Amount Validation
+﻿#  Vulnerability Report: No Amount Validation
 **Target Application:** Vuln-Bank (Localhost)
 **Author:** Karol
 **Date:** 17.03.2026
@@ -45,12 +45,7 @@ curl -i -X POST http://localhost:5000/transfer \
 
 ---
 
-## 5. Recommendations
-* Waliduj `amount` po stronie serwera: dodatnia, limitowana, poprawna precyzja.
-* Dodaj limity transakcji i reguly antyfraudowe.
-* Zabezpiecz endpoint testami negatywnymi.
-
----
-
-## 6. Final Assessment
+## 5. Final Assessment
 Podatnosc **No amount validation** zostala potwierdzona. Konieczna jest scisla walidacja kwot po stronie backendu.
+
+

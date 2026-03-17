@@ -1,4 +1,4 @@
-#  Vulnerability Report: Unrestricted File Upload
+﻿#  Vulnerability Report: Unrestricted File Upload
 **Target Application:** Vuln-Bank (Localhost)
 **Author:** Karol
 **Date:** 17.03.2026
@@ -44,12 +44,7 @@ curl -i -X POST http://localhost:5000/upload_profile_picture \
 
 ---
 
-## 5. Recommendations
-* Wprowadz whitelisty rozszerzen i MIME.
-* Waliduj magic bytes i skanuj pliki antymalware.
-* Przechowuj pliki poza web root i generuj bezpieczne nazwy.
-
----
-
-## 6. Final Assessment
+## 5. Final Assessment
 Podatnosc **Unrestricted file upload** zostala potwierdzona. Upload wymaga scislej walidacji i izolacji plikow.
+
+
