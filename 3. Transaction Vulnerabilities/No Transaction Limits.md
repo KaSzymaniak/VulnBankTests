@@ -17,4 +17,4 @@ Aplikacja pozwala na wykonanie wielu transakcji bez odpowiednich ograniczeń, co
 - uzyskaniem ujemnego stanu konta
 - niespójnością danych finansowych
 
-![Image].(../img/TransactionIMG.png)
+![Image](../img/TransactionIMG.png)
