@@ -9,6 +9,6 @@ Zweryfikować obecność tokena.
 ## Rezultat:
 Widoczny jwt_token wraz z jego wartością.
 
-![1_jwttoken.png](https://github.com/KaSzymaniak/VulnBankTests/blob/main/img/1_jwttoken.png?raw=true)
+![1_jwttoken.png](../img/1_jwttoken.png)
 
 
