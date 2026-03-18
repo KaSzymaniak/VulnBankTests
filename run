@@ -1,0 +1,3 @@
+otworz git bash
+
+pandoc dokumentacja.md */*.md --toc -o dokumentacja.pdf
