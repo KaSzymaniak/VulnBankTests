@@ -22,4 +22,4 @@ curl -s -X POST http://localhost:5000/api/v1/forgot-password \
 W polu message widoczny jest szczegolowy blad, np.:
 - "'NoneType' object has no attribute 'get'"
 
-![2_errormessage.png](../img/2_errormessage.png)
+![2_errormessage.png](img\2_errormessage.png)

@@ -64,7 +64,7 @@ SELECT username, password FROM users;
 
 Aplikacja przechowuje hasla w postaci jawnej (plaintext), co zostalo potwierdzone bezposrednim odczytem z bazy danych:
 
-![alt text](../img/image.png)
+![alt text](img\image.png)
 ---
 
 ## 5. Wnioski

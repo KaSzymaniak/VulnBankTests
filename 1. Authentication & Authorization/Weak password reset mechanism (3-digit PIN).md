@@ -12,7 +12,7 @@ Mechanizm resetu hasła opiera się wyłącznie na 4-cyfrowym kodzie PIN (10000 
 6. Monitorować odpowiedzi serwera w celu wykrycia poprawnego kodu (np. zmiana statusu odpowiedzi).
 7. Po odnalezieniu poprawnego PIN-u hasło zostanie zmienione.
 
-![image](../img/PINimg.png)
+![image](img\PINimg.png)
 
 ## Rezultat:
 Możliwe jest odgadnięcie poprawnego kodu PIN poprzez brute-force, co pozwala na nieautoryzowaną zmianę hasła i przejęcie konta użytkownika.

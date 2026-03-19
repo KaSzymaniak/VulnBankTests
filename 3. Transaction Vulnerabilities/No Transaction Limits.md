@@ -11,7 +11,7 @@ Aplikacja nie posiada odpowiednich ograniczeń dotyczących liczby oraz wartośc
 5. Wykonać wielokrotne żądania w krótkim czasie (np. przy użyciu fuzzingu).
 6. Obserwować zmiany salda konta po wykonaniu wielu operacji.
 
-![Image](../img/TransactionIMG.png)
+![Image](img\TransactionIMG.png)
 
 ## Rezultat:
 Aplikacja pozwala na wykonanie wielu transakcji bez odpowiednich ograniczeń, co skutkuje:

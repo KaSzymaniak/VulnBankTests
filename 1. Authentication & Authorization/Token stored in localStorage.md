@@ -9,6 +9,6 @@ Aplikacja przechowuje token JWT w localStorage, co zwiększa ryzyko przejęcia t
 ## Rezultat:
 Widoczny jwt_token wraz z jego wartością.
 
-![1_jwttoken.png](../img/1_jwttoken.png)
+![1_jwttoken.png](img\1_jwttoken.png)
 
 
