@@ -9,7 +9,7 @@ Aplikacja nie weryfikuje poprawnie limitów finansowych podczas dodawania nowej 
 4. Wprowadzić kwotę na minusie jako limit karty.
 5. Wysłać żądanie o dodaniu karty płatniczej.
 
-![Image].(../CardLimitIMG.png)
+![Image].(img\CardLimitIMG.png)
 
 ## Rezultat:
 Aplikacja akceptuje transakcje mimo braku sensu logicznego, co skutkuje:

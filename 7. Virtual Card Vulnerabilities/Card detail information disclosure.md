@@ -2,7 +2,7 @@
 
 W trakcie przeprowadzania testów penetracyjnych strony internetowej w lokalnym środowisku stwierdzono występowanie luki bezpieczeństwa, która umożliwia nieautoryzowany dostęp do informacji o kartach wirtualnych. W szczególności problem ten dotyczy endpointu `/api/virtual_cards`, gdzie przypadkowo ujawniane są szczegóły kart.
 
-![image]("../img/card information.png")
+![image](img\card_information.png)
 
 ## Typ luki: Disclosure of Information
 - **Endpoint:** `/api/virtual_cards`

@@ -8,7 +8,7 @@ Aplikacja przekazuje tokeny uwierzytelniające (np. JWT, session ID) w parametrz
 2. Otworzyć DevTools (F12) → zakładka **Network**.
 3. Zidentyfikować żądania, w których token jest przekazywany w URL i zobaczyć token
 
-![Image](../img/TokenIMG.png)
+![Image](img\TokenIMG.png)
 
 ## Rezultat:
 - Token jest widoczny w URL i może zostać zapisany w:
