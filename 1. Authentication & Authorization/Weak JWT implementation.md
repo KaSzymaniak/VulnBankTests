@@ -7,11 +7,11 @@ Podczas analizy mechanizmu sesji opartego na **JSON Web Tokens (JWT)**, zidentyf
 
 ## 2. Zidentyfikowane podatności
 
-### 2.1 Brak żądania wygaśnięcia (claim exp)
+### 2.1 Brak żądania wygaśnięcia 
 * **Opis:** Token zawiera jedynie pole `iat` (Issued At). Brak pola `exp` (Expiration Time) sprawia, że sesja użytkownika jest bezterminowa.
 * **Ryzyko:** Raz przejęty token pozwala atakującemu na dostęp do konta ofiary na zawsze.
 
-### 2.2 Pomieszanie algorytmów (Atak None) - CVE-2015-2951
+### 2.2 Pomieszanie algorytmów 
 * **Opis:** Serwer akceptuje tokeny z nagłówkiem `"alg": "none"`. Pozwala to na całkowite usunięcie podpisu kryptograficznego i ręczną edycję danych wewnątrz tokena.
 * **Ryzyko:** Krytyczne. Każdy użytkownik może stać się administratorem.
 

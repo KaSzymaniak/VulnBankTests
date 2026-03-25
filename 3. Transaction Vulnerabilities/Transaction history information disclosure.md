@@ -1,5 +1,5 @@
 # Transaction history information disclosure
-Podczas testów skoncentrowano się na funkcjonalności wyświetlania historii transakcji użytkownika. Zidentyfikowano, że dostęp do szczegółów transakcji można uzyskać poprzez wołanie do endpointu `/transactions/user`. 
+Zidentyfikowano, że dostęp do szczegółów transakcji można uzyskać poprzez wołanie do endpointu `/transactions/user`. 
 
 ## Wyniki Testu
 Zidentyfikowano istotny problem związany z **ujawnieniem informacji dotyczących historii transakcji** użytkowników:

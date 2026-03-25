@@ -1,5 +1,5 @@
 # Unsafe file naming
-Unsafe file naming odnosi się do sytuacji, w której nazwy plików nie są walidowane lub zabezpieczone, co pozwala na umieszczanie złośliwych plików na serwerze. W przypadku zmiany zdjęcia na stronie, użytkownik mógłby wprowadzić nazwy plików, które mogą zagrażać bezpieczeństwu.
+W przypadku zmiany zdjęcia na stronie, użytkownik mógłby wprowadzić nazwy plików, które mogą zagrażać bezpieczeństwu.
 
 ### Sprawdzenie Skryptów Zmiany Nazwy Plików
 Podczas testów przeanalizowano metody przesyłania zdjęć oraz ich zmiany na stronie. Poniżej przedstawiono kilka kluczowych punktów:
