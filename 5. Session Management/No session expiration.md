@@ -8,8 +8,7 @@ Testowane funkcjonalności były realizowane w środowisku lokalnym. Zastosowane
 - **Narzędzia skanowania**: Użycie narzędzi do identyfikacji podatności w aplikacji internetowej.
 
 ## Wyniki
-Podczas testów stwierdzono, że:
-- Sesje użytkowników nie wygasają automatycznie po określonym czasie bez aktywności.
+Podczas testów stwierdzono, żee użytkowników nie wygasają automatycznie po określonym czasie bez aktywności.
 - Użytkownicy mogą być zalogowani na stronie przez nieokreślony czas, co zwiększa ryzyko nieautoryzowanego dostępu po opuszczeniu komputera.
 - Brak mechanizmu wygasania sesji może prowadzić do sytuacji, w których inny użytkownik może przejąć aktywną sesję.
 

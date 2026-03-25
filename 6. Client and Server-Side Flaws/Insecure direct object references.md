@@ -19,22 +19,3 @@ Testy przeprowadzono w trzech głównych krokach:
 1. **Analiza aplikacji** – zidentyfikowanie obiektów, do których użytkownicy mają dostęp, oraz sposobów, w jakie aplikacja identyfikuje te obiekty.
 2. **Testy autoryzacyjne** – manipulacja identyfikatorami w żądaniach HTTP w celu sprawdzenia, czy system odpowiednio reaguje na nieuprawniony dostęp.
 3. **Dokumentacja wyników** – zapisanie wszelkich odkrytych luk oraz zasobów, do których uzyskano dostęp.
-
-## Zagadnienia Bezpieczeństwa
-
-Zidentyfikowanie IDOR wskazuje na szereg problemów w konstrukcji aplikacji:
-
-- **Brak odpowiednich mechanizmów autoryzacji**, co pozwala na łatwe przeskakiwanie do innych obiektów.
-- **Nieprzestrzeganie zasad najmniejszych uprawnień**, co może skutkować ujawnieniem wrażliwych danych.
-
-## Rekomendacje
-
-Aby zminimalizować ryzyko związane z IDOR, sugerujemy następujące działania:
-
-1. **Wdrożenie mechanizmów autoryzacji** – każda operacja na obiektach powinna być weryfikowana pod kątem uprawnień użytkownika.
-2. **Używanie tokenów zamiast jawnych identyfikatorów** – zamiast tradycyjnych identyfikatorów obiektów, lepiej jest używać tokenów, które nie mogą być łatwo odgadnięte lub zmienione.
-3. **Edukacja zespołu developerskiego** – regularne szkolenia dotyczące zagrożeń bezpieczeństwa i odpowiednich praktyk programowania.
-
-## Podsumowanie
-
-Insecure Direct Object References stanowią poważne zagrożenie dla bezpieczeństwa aplikacji. Zidentyfikowane luki należy jak najszybciej naprawić poprzez wdrożenie odpowiednich mechanizmów zabezpieczeń oraz edukację zespołu programistycznego. Implementacja rekomendacji pomoże zminimalizować ryzyko takich ataków w przyszłości.

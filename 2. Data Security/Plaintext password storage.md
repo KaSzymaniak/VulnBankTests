@@ -6,15 +6,15 @@
 
 ---
 
-## 1. Overview
+## 1. Przegląd
 
 Wykryto krytyczna podatnosc polegajaca na przechowywaniu hasel uzytkownikow w postaci jawnej (plaintext). Aplikacja nie stosuje mechanizmow haszowania ani zabezpieczen kryptograficznych, co prowadzi do bezposredniego ujawnienia danych uwierzytelniajacych w bazie danych.
 
 ---
 
-## 2. Identified Vulnerability
+## 2. Zidentyfikowana podatność
 
-### 2.1 Plaintext Password Storage
+### 2.1 Przechowywanie haseł otwartym tekstem (Plaintext)
 
 * **Opis:** Hasla uzytkownikow sa przechowywane w bazie danych w formie niezaszyfrowanej (plaintext).
 * **Co jest nie tak:** Brak zastosowania bezpiecznych funkcji haszujacych (np. bcrypt, Argon2) oraz brak polityki ochrony danych uwierzytelniajacych.
@@ -22,7 +22,7 @@ Wykryto krytyczna podatnosc polegajaca na przechowywaniu hasel uzytkownikow w po
 
 ---
 
-## 3. Proof of Concept (PoC)
+## 3. Dowód koncepcji (PoC)
 
 ### 3.1 Test - Odczyt hasel z bazy danych
 
@@ -60,7 +60,7 @@ SELECT username, password FROM users;
 
 ---
 
-## 4. Result
+## 4. Wynik
 
 Aplikacja przechowuje hasla w postaci jawnej (plaintext), co zostalo potwierdzone bezposrednim odczytem z bazy danych:
 

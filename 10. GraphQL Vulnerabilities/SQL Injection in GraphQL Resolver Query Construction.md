@@ -6,7 +6,7 @@ Dane wejściowe użytkownika są bezpośrednio wykorzystywane do budowy zapytań
 ## Reprodukcja:
 1. Otworzyć przeglądarkę i za pomocą Dev Tools (F12) znaleźć token
 2. Wysłać zapytanie GraphQL zawierające parametr wejściowy używając terminala:
-```
+```bash
 curl -X POST http://localhost:5000/graphql
 -H "Content-Type: application/json"
 -H "Authorization: Bearer Token"

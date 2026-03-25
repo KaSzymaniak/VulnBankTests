@@ -6,15 +6,15 @@
 
 ---
 
-## 1. Overview
+## 1. Przegląd
 
 Wykryto podatnosc polegajaca na braku walidacji konta odbiorcy podczas wykonywania przelewu. Aplikacja akceptuje dowolne wartosci pola `to_account`, bez sprawdzania czy konto istnieje w systemie.
 
 ---
 
-## 2. Identified Vulnerability
+## 2. Zidentyfikowana podatność
 
-### 2.1 No Validation on Recipient Accounts (CWE-20 / Business Logic Flaw)
+### 2.1 Brak walidacji kont odbiorców (CWE-20 / Business Logic Flaw)
 
 * **Opis:** System nie weryfikuje czy konto odbiorcy istnieje przed zapisaniem transakcji.
 * **Co jest nie tak:** Brak walidacji danych wejściowych oraz brak sprawdzenia integralnosci biznesowej operacji.
@@ -22,7 +22,7 @@ Wykryto podatnosc polegajaca na braku walidacji konta odbiorcy podczas wykonywan
 
 ---
 
-## 3. Proof of Concept (PoC)
+## 3. Dowód koncepcji (PoC)
 
 ### 3.1 Test — Przelew na nieistniejące konto (krok po kroku)
 
