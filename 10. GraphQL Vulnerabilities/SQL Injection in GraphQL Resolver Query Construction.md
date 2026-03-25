@@ -12,6 +12,7 @@ curl -X POST http://localhost:5000/graphql
 -H "Authorization: Bearer Token"
 -d "{\"query\":\"{ __type(name: \\\"TransactionSummaryType\\\") { name fields { name type { name kind ofType { name } } } } }\"}"
 ```
+![Image](img\GraphlSQLInjIMG.png)
 
 ## Rezultaty:
 - Możliwe jest wpływanie na zapytania wykonywane przez backend poprzez manipulację danymi wejściowymi.
