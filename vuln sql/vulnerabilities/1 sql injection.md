@@ -73,3 +73,20 @@ users
 ```
 
 TODO: Wziac wszystkie wartosci z kazdej z tabel
+
+## mapowanie
+Na serwerze wykryto brak mapowania
+
+przyklad jak wyglada
+```
+query = "SELECT * FROM users WHERE name = ?"
+prepare(query)
+bind(1, userInput)
+execute()
+```
+ale serwer wykorzystuje:
+```
+query = "SELECT * FROM users WHERE name = '" + userInput + "';"
+```
+
+mozna znalezc w pliku cat.php
