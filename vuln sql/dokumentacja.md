@@ -7,6 +7,10 @@ author:
   - Mateusz Saj
   - Mikołaj Maliszewski
 toc-tile: Spis treści
+geometry: margin=2cm
+header-includes:
+ - \usepackage{fvextra}
+ - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
 ---
 
 # Wstęp
