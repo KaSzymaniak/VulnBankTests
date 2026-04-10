@@ -1,0 +1,3 @@
+otworz git bash
+
+pandoc --from markdown-blank_before_header-space_in_atx_header+lists_without_preceding_blankline dokumentacja.md vulerabilities/* --toc -o dokumentacja.pdf
