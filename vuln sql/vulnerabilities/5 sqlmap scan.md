@@ -6,10 +6,10 @@ Weryfikacja podatności SQL Injection oraz ekstrakcja danych z aplikacji webowej
 ## Wykonanie
 
 Użycie komendy
-''
+'''
 sqlmap -u "https://192.168.X.X/cat.php?id=1" --dbs
-''
-Gdzie za X należy podstawić adres strony na, której postawiliśmy .iso
+'''
+Gdzie za X należy podstawić adres IP maszyny wirtualnej w sieci
 
 ## Wyniki
 
