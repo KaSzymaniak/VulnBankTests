@@ -1,4 +1,4 @@
-# Skanowanie katalogów i wstępna enumeracja
+﻿# Skanowanie katalogów i wstępna enumeracja
 
 Zidentyfikowano interesujące pliki i endpointy
 
@@ -84,4 +84,3 @@ server-status (Status: 403) [Size: 295]
 show (Status: 200) [Size: 1320]  
 - 200 OK: Zasób /show działa i zwraca 1320 bajtów. Prawdopodobnie przyjmuje parametr (np. id) — wysoki priorytet do dalszego testowania parametrów.
 
-TODO: testy lfi

@@ -1,4 +1,4 @@
-# Analiza strony za pomocą narzędzia sqlmap
+﻿# Analiza strony za pomocą narzędzia sqlmap
 
 ## Cel testów
 Weryfikacja podatności SQL Injection oraz ekstrakcja danych z aplikacji webowej.
@@ -13,7 +13,7 @@ Gdzie za X należy podstawić adres IP maszyny wirtualnej w sieci
 
 ## Wyniki
 
-![](../img/sqlmap.png)
+![](img/sqlmap.png)
 
 ## Wstępna analiza
 

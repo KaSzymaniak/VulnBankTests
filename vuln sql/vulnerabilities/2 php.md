@@ -1,4 +1,4 @@
-## mozemy dodawac pliki
+﻿## mozemy dodawac pliki
 
 Przesłano plik zawierający PHP:
 
@@ -8,7 +8,7 @@ Przesłano plik zawierający PHP:
 ?>
 ```
 
-![dodanie pliku helloworld](../img/php_hello_world.png)
+![dodanie pliku helloworld](img/php_hello_world.png)
 
 - .phtml — alternatywne rozszerzenie plików PHP.  
 - .php3, .php4, .php5 — starsze wersje (rzadko używane obecnie).  
@@ -23,9 +23,6 @@ http://vulnerable/admin/uploads/helloworld.php3
 
 Wyswietlilo sie hello world
 
-TODO: dziwne
 The filename should only contains between 3 to 8 letters
 
-TODO: exec shell from php
 
-TODO: get everything from shell

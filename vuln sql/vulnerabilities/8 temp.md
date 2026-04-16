@@ -1,4 +1,4 @@
-# Inspecting HTTP headers
+﻿# Inspecting HTTP headers
 
 ## Cel
 Identyfikacja ujawnianych informacji o technologii, konfiguracji HTTP i bledow aplikacji na podstawie odpowiedzi serwera.
@@ -10,11 +10,11 @@ curl.exe -i "http://vulnerable/all.php"
 curl.exe -i http://vulnerable/admin
 ```
 
-![](../img/http_headers_home.png)
+![](img/http_headers_home.png)
 
-![](../img/http_headers_admin.png)
+![](img/http_headers_admin.png)
 
-![](../img/http_headers_all.png)
+![](img/http_headers_all.png)
 
 ## Wyniki
 1. Endpoint glowny zwraca status 200 OK.
@@ -62,11 +62,11 @@ nmap -p80 --script http-title,http-server-header,http-headers,http-methods,http-
 curl.exe -s http://vulnerable/ | Tee-Object -FilePath recon_index.html
 ```
 
-![](../img/nmap_scan_powershell.png)
+![](img/nmap_scan_powershell.png)
 
-![](../img/nmap_http_fingerprint.png)
+![](img/nmap_http_fingerprint.png)
 
-![](../img/recon_html_made.png)
+![](img/recon_html_made.png)
 
 ## Wyniki
 1. Host odpowiada i udostepnia usluge HTTP na porcie 80.

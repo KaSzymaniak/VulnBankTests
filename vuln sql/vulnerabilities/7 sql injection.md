@@ -1,4 +1,4 @@
-# Wykorzystanie podatności SQL Injection 
+﻿# Wykorzystanie podatności SQL Injection 
 
 ## Cel testów
 Weryfikacja podatności typu SQL Injection w parametrze `id` oraz ekstrakcja danych z bazy danych poprzez technikę UNION-based SQL Injection.
@@ -42,7 +42,7 @@ Wykryto, że zapytanie SQL posiada:
 
 ### 1. Nazwa bazy danych
 
-![](../img/sqlmapdatabase.png)
+![](img/sqlmapdatabase.png)
 
 ---
 
@@ -50,19 +50,19 @@ Wykryto, że zapytanie SQL posiada:
 
 Uzyskano dostęp do metadanych bazy danych poprzez `information_schema.tables`, co pozwoliło na identyfikację dostępnych tabel w systemie.
 
-![](../img/sqlmaptabele.png)
+![](img/sqlmaptabele.png)
 
 ---
 
 ### 3. Lista Kolumn
 
 Uzyskano dostęp do metadanych bazy danych poprzez `information_schema.columns`, co pozwoliło na identyfikację dostępnych tabel w systemie.
-![](../img/sqlmapkolumny.png)
+![](img/sqlmapkolumny.png)
 ---
 
 ### 4. Hasło użytkownika z dostępem administratorskim
 
-![](../img/sqlmaphasło.png)
+![](img/sqlmaphasło.png)
 ---
 
 ### Wyniki

@@ -1,4 +1,4 @@
-# Analiza strony za pomocą narzędzia nmap
+﻿# Analiza strony za pomocą narzędzia nmap
 
 ## Cel testów
 Identyfikacja aktywnych hostów w sieci lokalnej oraz wykrycie otwartych portów i usług w celu wstępnej analizy powierzchni ataku.
@@ -13,7 +13,7 @@ Gdzie za X należy podstawić adres IP maszyny wirtualnej w sieci
 
 ## Wyniki
 
-![](../img/nmapscan.png)
+![](img/nmapscan.png)
 
 ## Wstępna analiza
 
