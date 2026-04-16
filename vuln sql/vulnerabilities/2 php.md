@@ -1,10 +1,6 @@
-mozemy dodawac pliki
+## mozemy dodawac pliki
 
-helloworld.php
-
-NO PHP!!
-
-helloworld
+Przesłano plik zawierający PHP:
 
 ```php
 <?php
@@ -12,20 +8,20 @@ helloworld
 ?>
 ```
 
-[dodanie pliku helloworld](\img\php_hello_world.png)
+![dodanie pliku helloworld](../img/php_hello_world.png)
 
-.phtml — alternative PHP file extension.
-.php3, .php4, .php5 — legacy versions (rarely used today).
-.inc — include files (often contain PHP); should be protected from direct web access.
-.html or .htm — can contain PHP if server configured (e.g., via Apache AddType/AddHandler or .htaccess to pass .html to PHP).
+- .phtml — alternatywne rozszerzenie plików PHP.  
+- .php3, .php4, .php5 — starsze wersje (rzadko używane obecnie).  
+- .inc — pliki dołączane (często zawierają PHP); powinny być chronione przed bezpośrednim dostępem przez WWW.  
+- .html lub .htm — mogą zawierać kod PHP, jeśli serwer jest tak skonfigurowany (np. przez Apache AddType/AddHandler lub przez .htaccess przekazujący .html do interpretera PHP).
 
-php3
+Dziala php3
 
 ```
 http://vulnerable/admin/uploads/helloworld.php3
 ```
 
-Wyswietlilo sie hellow world
+Wyswietlilo sie hello world
 
 TODO: dziwne
 The filename should only contains between 3 to 8 letters
