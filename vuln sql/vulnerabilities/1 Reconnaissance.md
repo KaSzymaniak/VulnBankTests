@@ -18,7 +18,7 @@ nmap -sV 192.168.X.X
 
 ### Wyniki
 
-![nmap scan](img/nmapscan.png)
+![nmap scan](../img/image.png)
 
 ### Wstępna analiza
 
@@ -55,7 +55,7 @@ gobuster dir -u http://192.168.X.X -w /usr/share/wordlists/dirb/big.txt
 
 ### Wyniki
 
-![dir scan](img/image-2.png)
+![dir scan](../img/image.png)
 
 **Zidentyfikowane zasoby:**
 

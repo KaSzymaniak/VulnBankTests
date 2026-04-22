@@ -16,7 +16,7 @@ http://192.168.56.6/cat.php?id=1 order by 4
 http://192.168.56.6/cat.php?id=1 order by 5
 ```
 
-![order by test](img/image_col.png)
+![order by test](../img/image.png)
 
 Przy `order by 5` pojawia się błąd SQL, co wskazuje, że zapytanie posiada **4 kolumny**.
 
@@ -42,37 +42,9 @@ You have an error in your SQL syntax; check the manual that corresponds to your 
 http://192.168.56.6/cat.php?dowolny%20string%20id=1
 ```
 
-![undefined index](img/cat_undefined.png)
+![undefined index](../img/image.png)
 
 Aplikacja oczekuje konkretnego parametru `id` i nie obsługuje zmiennych parametrów — dodatkowy symptom słabej walidacji.
-
-## Identyfikacja typu bazy danych
-
-```
-http://192.168.56.6/cat.php?id=1 union select 1, @@version, 3, 4
-```
-
-Wynik:
-```
-5.1.63-0+squeeze1
-```
-
-**Potwierdzenie:** Baza danych to **MySQL w wersji 5.1.63-0+squeeze1**.
-
-## Enumeracja struktury bazy
-
-### Wylistowanie tabel
-
-```
-http://192.168.56.6/cat.php?id=1 union select 1, table_name, 3, 4 from information_schema.tables
-```
-
-![tabele](img/tables.png)
-
-**Istotne tabele:**
-- `users` – konta użytkowników
-- `pictures` – dane zdjęć
-- `categories` – kategorie zdjęć
 
 ## Analiza podatności
 
@@ -92,3 +64,18 @@ execute()
 ```
 
 **Ryzyko:** Pełna kompromitacja bazy danych.
+
+---
+
+## Podsumowanie i następne kroki
+
+**Zidentyfikowane podatności:**
+1. Brak sanitizacji wejścia
+2. Brak prepared statements
+3. Information disclosure (błędy SQL)
+4. Zapytanie zawiera 4 kolumny
+
+**Następne testy:**
+- Automatyczne skanowanie (SQLMap)
+- Zaawansowane techniki (UNION SELECT, blind SQLi)
+- Enumeracja i ekstrakcja danych
